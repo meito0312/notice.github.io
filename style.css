@@ -1,0 +1,501 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body{
+  font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+  color:rgb(54, 53, 53);
+}
+a{
+  text-decoration: none;
+  color:rgb(54, 53, 53);
+  display: inline-block;
+}
+a:hover{
+  text-decoration: underline;
+}
+.header-logo img{
+  width: 180px;
+  height: 100px;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+.global-nav{
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-top: 20px;
+}
+.global-nav a{
+  padding-right: 20px;
+  display: inline-block;
+}
+#home{
+  background-image: url(’../images/damir-spanic-TrNithFZaho-unsplash.jpeg’);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.burger-btn{
+  display: none;      
+  width: 39px;      
+  height: 39px;      
+  position: relative;      
+  z-index: 3;
+  border:none;    
+}    
+.bar{      
+  width: 20px;      
+  height: 1px;        
+  display: block;      
+  position: absolute;      
+  left: 50%;      
+  transform: translateX(-50%);      
+  background-color: rgb(39, 38, 38);    
+}    
+.bar_top{   
+  top: 10px;
+}
+.bar_mid{    
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bar_bottom{
+  bottom: 10px;
+}
+
+.burger-btn.close .bar_top{      
+  transform: translate(-50%,10px) rotate(45deg);      
+  transition: transform .3s;    
+}    
+.burger-btn.close .bar_mid{      
+  opacity: 0;       
+  transition: opacity .3s;    
+}    
+.burger-btn.close .bar_bottom{      
+transform: translate(-50%,-8px) rotate(-45deg);      
+transition: transform .3s;    
+}
+
+.nav-wrapper{      
+  display: none;
+}
+
+.key-visial {
+  position: absolute;
+  top: 30%;
+  left: 65%;
+  border: 3px solid rgb(54, 53, 53);
+  border-radius: 50% 50%;
+  text-align: center;
+  padding: 100px 80px 90px;
+}
+.shop-logo img{
+width: 200px;
+height: 100px;
+}
+.key-visial h3{
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+.key-visial i{
+  padding-left: 10px;
+}
+main{
+  background-color: #FFC8B7;
+  padding: 40px 40px;
+}
+.concept{
+  background-image: linear-gradient(rgba(69,69,69, 0.5), rgba(69, 69, 69, 1)),
+  url(../images/rose.jpeg);
+  background-size: cover;
+  color: #fff;
+  border:1px solid #fff;
+  padding: 40px;
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 3px;
+}
+.concept h2{
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.concept p{
+  padding: 20px;
+  font-size: 15px;
+}
+
+.concept a{
+  color: #fff;
+  font-size: 15px;
+}
+.concept i{
+  color: #fff;
+  padding-left: 10px;
+}
+.item{
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+.shampoo,.skincare{
+  padding: 30px;
+}
+.shampoo img,.skincare img{
+  width: 300px;
+  height: 400px;
+}
+.item h2{
+  font-size: 25px;
+  padding: 10px 0 7px;
+}
+.item p{
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+.item a{
+  display: block;
+  text-align: center;
+}
+.item i{
+  padding-left: 10px;
+}
+.item small{
+  font-size: 15px;
+}
+footer{
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+}
+footer img{
+  width: 200px;
+  height: 100px;
+}
+footer p{
+  font-size: 10px;
+}
+#contact{
+  line-height: 2rem;
+  padding-top: 10px;
+}
+#contact p{
+  font-size: 15px;
+}
+#concept{
+  background-image: url(../images/white.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+  position: relative;
+}
+#concept p{
+  position: absolute;
+  top:15%;
+  left: 50%;
+  font-size: 20px;
+  line-height: 2rem;
+}
+#item{
+  text-align: center;
+}
+#item .flower{
+  width: 250px;
+  height: 130px;
+}
+#item img{
+  width: 250px;
+  height: 230px;
+}
+.item-title{
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+.item-wrapper{
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contents{
+  padding: 5px;
+}
+.contents h3{
+  padding: 20px;
+  font-size: 25px;
+}
+.contents h4{
+  padding-bottom: 20px;
+}
+.contents input{
+  padding: 5px 10px;
+}
+.contact{
+  background-image: url(../images/glauco-zuccaccia-TFY0BmPk5sc-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 40px;
+}
+input {
+  width: 350px;
+  box-sizing: border-box;
+  margin: 1em 0;
+  padding: .8em;
+  border-radius: 2em;
+  border: 2px solid #aaa;
+}
+textarea {
+  width: 350px;
+  box-sizing: border-box;
+  margin: 1em 0;
+  padding: .8em;
+  border-radius: 1em;
+  border: 2px solid #aaa;
+}
+.btn{
+  width: 250px;
+  letter-spacing: 1px;
+}
+
+
+@media(max-width:1000px){
+  .key-visial{
+    position: absolute;
+    top:40%;
+    left:60%;
+    padding: 40px 20px 30px;
+    }
+  .key-visial h3{
+    font-size: 15px;
+    padding-bottom: 10px;
+    }
+  .key-visial p{
+    font-size: 10px;
+    }
+}
+@media(max-width:760px){
+  .header-logo img{
+    width: 120px;
+    height: 60px;
+  }
+  header{
+    padding: 10px 20px;
+  }
+  .global-nav{
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .global-nav a{
+    padding-right: 10px;
+  }
+  .shop-logo img{
+    width: 150px;
+    height: 70px;
+    }
+    .item{
+      flex-direction: column;
+      align-items: center;
+    }
+    .item h2{
+      font-size: 20px;
+    }
+    .item p{
+      font-size: 15px;
+    }
+    footer img{
+      width: 100px;
+      height: 50px;
+    }
+  
+    #contact{
+      line-height: 1.5rem;
+      padding-top: 10px;
+    }
+    #contact p{
+      font-size: 13px;
+    }
+    #concept p{
+      top:10%;
+      left: 35%;
+      font-size: 18px;
+      line-height: 1.8rem;
+    }
+    
+    
+}
+@media(max-width:500px){
+  .key-visial{
+    display: none;
+  }
+  .concept{
+    padding: 20px;
+    width: 200px;
+  }
+  .concept h2{
+    padding-top: 10px;
+    font-size: 25px;
+}
+  .concept p{
+  padding: 10px;
+  font-size: 15px;
+}
+  footer{
+    flex-direction: column;
+    align-items: center;
+  }
+  .child_1{
+    order:2;
+  }
+  .child_2{
+    order:1;
+  }
+  input,textarea{
+    width: 200px;
+  }
+  .btn{
+    width: 100px;
+  }
+}
+@media(max-width:380px){
+  .global-nav{
+    display: none;
+  }
+  .burger-btn{
+    display: block;
+  } 
+  .nav-wrapper{  
+    display: none;
+    width: 180px;           
+    position: fixed;      
+    top: 15%;      
+    left: 20%;       
+    z-index: 2;
+    padding: 20px;      
+    background-color:rgba(69,69,69, 0.8);  
+    
+  }      
+  
+  .nav-wrapper a{
+    color: #fff;        
+    display: block;              
+    text-align: center;
+    line-height: 2rem;      
+}
+
+#home{
+  height: 400px;
+}
+.contents h3{
+  padding: 15px;
+  font-size: 20px;
+  }
+}
